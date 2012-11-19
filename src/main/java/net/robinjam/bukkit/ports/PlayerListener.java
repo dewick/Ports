@@ -71,8 +71,10 @@ public class PlayerListener implements Listener {
 			if (port.getDepartureSchedule() > 0) {
 				plugin.getTicketManager().addTicket(player, port);
 				player.sendMessage(ChatColor.AQUA
-						+ "Welcome! Please take this ticket and wait for the "
-						+ port.getDescription() + " to depart.");
+                        + "Vitej! Tady mas jizdenku a pockej, nez "
+                        + ChatColor.GREEN
+						+ port.getDescription()
+                        + ChatColor.AQUA + " odleti.");
 			} else {
 				plugin.teleportPlayer(player, port);
 			}

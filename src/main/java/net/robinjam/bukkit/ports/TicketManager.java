@@ -78,8 +78,9 @@ public class TicketManager implements Runnable {
 						long m = ((t % 24000) % 1000) / 16;
 						String nextDeparture = String.format("[%dd %dh %dm]",
 								d, h, m);
-						player.sendMessage(ChatColor.AQUA + "This "
-								+ port.getDescription() + " will depart in "
+						player.sendMessage(ChatColor.GREEN + ""
+                                + port.getDescription()
+                                + ChatColor.AQUA + " odleta za "
 								+ nextDeparture);
 					}
 				}

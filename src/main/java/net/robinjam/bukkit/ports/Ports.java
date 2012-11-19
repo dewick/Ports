@@ -159,7 +159,7 @@ public class Ports extends JavaPlugin {
 		World world = player.getWorld();
 		Chunk chunk = world.getChunkAt(player.getLocation());
 		world.refreshChunk(chunk.getX(), chunk.getZ());
-		player.sendMessage(ChatColor.AQUA + "Whoosh!");
+		player.sendMessage(ChatColor.AQUA + "Vitej do priletove stanice!");
 	}
 
 	public TicketManager getTicketManager() {
